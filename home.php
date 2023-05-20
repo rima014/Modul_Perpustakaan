@@ -5,7 +5,7 @@ $koneksi = new mysqli('localhost', 'root', '', 'modul-perpustakaan');
             <div id="page-inner">
                 <div class="row">
                     <div class="col-md-12">  
-                        <!-- <h2>Welcome Back Admin/User,<?php echo $_SESSION['nama']; ?></h5> -->
+                        <h2>Welcome Back Admin,<?php echo $_SESSION['nama']; ?></h5>
                     </div>
                 </div>              
                 <!-- /. ROW  -->

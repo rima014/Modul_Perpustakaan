@@ -66,10 +66,12 @@ if (isset($_POST['login'])) {
 
     $data = $sql->fetch_assoc();
 
-    $ketemu = $sql->num_rows;
+    // $ketemu = $sql->num_rows;
+    $ketemu = mysqli_num_rows($sql);
 
     if ($ketemu >= 1) {
         session_start();
+        // $data = mysqli_fetch_array($sql);
         if ($data['level'] == 'admin') {
             $_SESSION['admin'] = $data['id_user'];
             header('location:index.php');
