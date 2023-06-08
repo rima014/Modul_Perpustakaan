@@ -47,7 +47,7 @@
                 <ul class="nav" id="main-menu" >
                     <li class="text-center">
                         <img src="assets/img/find_user.png" class="user-image img-responsive" />
-                        <h2>Welcome Back Admin,<?php echo @$_SESSION['nama']; ?></h5>
+                        <h2>Welcome Back Admin,<?php echo $_SESSION['user']; ?></h5>
                     </li>
                     <li >
                         <a style="font-size: 15px;" href="?index.php"><i class="fa fa-dashboard fa-3x"></i> Dashboard</a>

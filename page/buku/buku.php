@@ -35,9 +35,8 @@
                                     <td><?php echo $data['isbn']; ?></td>
                                     <td><?php echo $data['jumlah_buku']; ?></td>
                                     <td>
-                                        <a href="?page=buku&aksi=ubah&id_buku=<?php echo $data['id_buku']; ?>" class="btn btn-info">Ubah</a>
-                                        <a onclick="return confirm('Anda yakin akan menghapus data ini ....??')" href="?page=buku&aksi=hapus&id_buku=<?php echo $data['id_buku']; ?>" class="btn btn-danger">delete
-                                        </a>
+                                        <a href="?page=buku&aksi=ubah&id_buku=<?php echo $data['id_buku']; ?>" class="btn btn-info"><i class="fa fa-edit"></i>Update</a></a>
+                                        <a onclick="return confirm('Anda yakin akan menghapus data ini ....??')" href="?page=buku&aksi=hapus&id_buku=<?php echo $data['id_buku']; ?>" class="btn btn-danger"><i class="fa fa-trash"></i>Delete</a>
                                     </td>
                                 </tr>
                             <?php } ?>
