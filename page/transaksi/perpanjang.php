@@ -15,7 +15,7 @@ if ($lambat > 7) {
 } else {
     $pecah_tgl_kembali = explode('-', $tgl_kembali);
     $next_7_hari = mktime(0, 0, 0, $pecah_tgl_kembali[1], $pecah_tgl_kembali[0] + 7, $pecah_tgl_kembali[2]);
-    $hari_next = date('d-m-Y', $next_7_hari);
+    $hari_next = date('d-m-y', $next_7_hari);
 
     $sql = $koneksi->query("update tb_transaksi set tgl_kembali='$hari_next' where id_transaksi='$id_transaksi'");
     if ($sql) {

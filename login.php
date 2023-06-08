@@ -61,8 +61,12 @@ $koneksi = new mysqli('localhost', 'root', '', 'modul-perpustakaan');
 if (isset($_POST['login'])) {
     $user_name = $_POST['user_name'];
     $password = $_POST['password'];
+    $admin = $_POST['admin'];
+    $user = $_POST['user'];
+    $nama = $_POST['nama'];
 
-    $sql = $koneksi->query("select * from tb_user where user_name='$user_name' and password='$password'");
+
+    $sql = $koneksi->query("SELECT * FROM tb_user WHERE user_name='$user_name' and password='$password'");
 
     $data = $sql->fetch_assoc();
 

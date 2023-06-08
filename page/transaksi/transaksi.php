@@ -40,7 +40,7 @@
                                         <?php
                                             $denda = 1000;
                                 $tgl_dateline = $data['tgl_kembali'];
-                                $tgl_kembali = date('y-m-d');
+                                $tgl_kembali = date('d-m-y');
 
                                 $lambat = terlambat($tgl_dateline, $tgl_kembali);
                                 $denda1 = $lambat * $denda;

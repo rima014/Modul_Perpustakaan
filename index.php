@@ -2,9 +2,9 @@
     session_start();
     include 'function.php';
     $koneksi = new mysqli('localhost', 'root', '', 'modul-perpustakaan');
-    // if (empty($_SESSION['level'])) {
+    // if ($_SESSION['level']) {
     //     header('location:login.php');
-    // }
+
     if (@$_SESSION['admin'] || @$_SESSION['user']) {
         ?>
 <!DOCTYPE html>
@@ -45,9 +45,10 @@
         <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu" >
-                    <!-- <li class="text-center">
+                    <li class="text-center">
                         <img src="assets/img/find_user.png" class="user-image img-responsive" />
-                    </li> -->
+                        <h2>Welcome Back Admin,<?php echo @$_SESSION['nama']; ?></h5>
+                    </li>
                     <li >
                         <a style="font-size: 15px;" href="?index.php"><i class="fa fa-dashboard fa-3x"></i> Dashboard</a>
                     </li>
@@ -112,16 +113,10 @@
         ?>
                     </div>
                 </div>
-                <!-- /. ROW  -->
                 <hr />
-
             </div>
-            <!-- /. PAGE INNER  -->
         </div>
-        <!-- /. PAGE WRAPPER  -->
     </div>
-    <!-- /. WRAPPER  -->
-    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
     <!-- JQUERY SCRIPTS -->
     <script src="assets/js/jquery-1.10.2.js"></script>
     <!-- BOOTSTRAP SCRIPTS -->
