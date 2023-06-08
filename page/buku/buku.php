@@ -1,4 +1,4 @@
-<a href="?page=buku&aksi=tambah" class="btn btn-primary" style="margin-bottom: 5px;">Tambah Data</a>
+<!-- <a href="?page=buku&aksi=tambah" class="btn btn-primary" style="margin-bottom: 5px;">Tambah Data</a> -->
 <div class="row">
     <div class="col-md-12">
         <!-- Advanced Tables -->
@@ -24,11 +24,9 @@
                         <tbody>
                             <?php
                             $no = 1;
-                            $sql = $koneksi->query("select * from tb_buku");
+                            $sql = $koneksi->query('select * from tb_buku');
                             while ($data = $sql->fetch_assoc()) {
-
-
-                            ?>
+                                ?>
                                 <tr>
                                     <td><?php echo $no++; ?></td>
                                     <td><?php echo $data['judul']; ?></td>
@@ -46,6 +44,9 @@
                         </tbody>
                     </table>
                 </div>
+                <a href="?page=buku&aksi=tambah" class="btn btn-primary" style="margin-bottom: 5px; margin-top:8px;"><i class="fa fa-plus"></i>Tambah Data</a>
+                <a href="./laporan/laporan_buku_exel.php" target="blank" class="btn btn-default"  style="margin-bottom: 5px; margin-top:8px;">
+                <i class="fa fa-print"></i>ExportToExel</a>
             </div>
         </div>
     </div>

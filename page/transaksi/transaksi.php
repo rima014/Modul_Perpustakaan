@@ -1,4 +1,4 @@
-<a href="?page=transaksi&aksi=tambah" class="btn btn-primary" style="margin-bottom: 5px;">Tambah Data</a>
+<!-- <a href="?page=transaksi&aksi=tambah" class="btn btn-primary" style="margin-bottom: 5px;">Tambah Data</a> -->
 <div class="row">
     <div class="col-md-12">
         <!-- Advanced Tables -->
@@ -70,6 +70,9 @@
                         </tbody>
                     </table>
                 </div>
+                <a href="?page=transaksi&aksi=tambah" class="btn btn-primary" style="margin-bottom: 5px; margin-top:8px;"><i class="fa fa-plus"></i>Tambah Data</a>
+                <a href="./laporan/laporan_transaksi_exel.php" target="blank" class="btn btn-default"  style="margin-bottom: 5px; margin-top:8px;">
+                <i class="fa fa-print"></i>ExportToExel</a>
             </div>
         </div>
     </div>

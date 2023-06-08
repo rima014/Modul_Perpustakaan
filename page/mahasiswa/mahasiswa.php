@@ -4,7 +4,7 @@
         <!-- Advanced Tables -->
         <div class="panel panel-default">
             <div class="panel-heading">
-                DATA BUKU
+                DATA MAHASISWA
             </div>
             <div class="panel-body">
                 <div class="table-responsive">
